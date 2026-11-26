@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
-"""Never Say It Out Loud — one line you should never, ever say out loud."""
+"""Say out loud the line that should never be said out loud.
 
-from entry_text import LINE
+The line is defined once, in entry_text. This script imports it
+under a local nickname and prints it, and prints nothing else.
+"""
 
-print(LINE)
+from entry_text import LINE as unsayable
+
+if __name__ == "__main__":
+    print(unsayable)
